@@ -61,18 +61,20 @@
         </div>
     </section>
 
-
     <section class="signup-form">
         <form class="container" aria-label="Sign up form">
             <div class="row mb-3">
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+                    <label for="firstName" class="sr-only">First Name</label>
+                    <input id="firstName" type="text" class="form-control" placeholder="First Name" aria-label="First Name">
                 </div>
                 <div class="col-md-3">
-                    <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+                    <label for="lastName" class="sr-only">Last Name</label>
+                    <input id="lastName" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
                 </div>
                 <div class="col-md-3">
-                    <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Email">
                 </div>
                 <div class="col-md-3 d-flex align-items-center">
                     <div class="form-check mt-2">
@@ -81,10 +83,11 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="row mb-3">
                 <div class="col-md-3">
-                    <select class="form-select" aria-label="Country of Residence">
+                    <label for="countryResidence" class="sr-only">Country of Residence</label>
+                    <select id="countryResidence" class="form-select" aria-label="Country of Residence">
                         <option selected>Country of Residence</option>
                         <option value="us">United States</option>
                         <option value="uk">United Kingdom</option>
@@ -92,13 +95,16 @@
                     </select>
                 </div>
                 <div class="col-md-3 d-flex">
-                    <select class="form-select me-2" aria-label="Country Code" style="max-width: 100px;">
+                    <label for="countryCode" class="sr-only">Country Code</label>
+                    <select id="countryCode" class="form-select me-2" aria-label="Country Code" style="max-width: 100px;">
                         <option>+359</option>
                     </select>
-                    <input type="tel" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                    <label for="phoneNumber" class="sr-only">Phone Number</label>
+                    <input id="phoneNumber" type="tel" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
                 </div>
                 <div class="col-md-3">
-                    <select class="form-select" aria-label="Currency">
+                    <label for="currency" class="sr-only">Currency</label>
+                    <select id="currency" class="form-select" aria-label="Currency">
                         <option selected>USD</option>
                         <option value="eur">EUR</option>
                         <option value="gbp">GBP</option>
@@ -110,7 +116,7 @@
                 </div>
             </div>
         </form>
-    </section>
+    </section>    
 
     <section class="phone-banner-section text-center">
         <div class="container">
