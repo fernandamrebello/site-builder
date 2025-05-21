@@ -406,6 +406,10 @@
       padding-left: 0;
       list-style: none;
     }
+
+    .banner-text li {
+      list-style: none;
+    }
   
     .store-buttons a img {
       width: 130px;
