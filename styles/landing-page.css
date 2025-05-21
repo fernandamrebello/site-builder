@@ -114,6 +114,14 @@
     font-weight: bold;
   }
   
+  .signup-form button.btn:hover {
+    background: #870d13;
+  }
+  
+  label.form-check-label {
+    margin-left: 5px;
+  }
+  
   /* Phone Banner Section */
   .phone-banner-section {
     padding-top: 3rem;
@@ -203,11 +211,19 @@
   .info-section h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #FFF;
+    color: #fff;
   }
   
   .text-block {
-    color: #FFF;
+    color: #fff;
+  }
+  
+  .text-block p {
+    font-size: 14px;
+  }
+  
+  .text-block h4 {
+    color: #e30613;
   }
   
   /* Download Section */
@@ -263,6 +279,15 @@
     color: #870d13;
   }
   
+  .awards-text {
+    margin-left: 12px;
+    color: #cdcdcd;
+  }
+  
+  .awards i {
+    color: #870d13;
+  }
+  
   /* Bottom footer */
   .footer-bottom {
     background-color: #000;
@@ -287,7 +312,7 @@
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 1.1rem;
-    color: #333;
+    color: #cdcdcd;
   }
   
   .footer-block p,
@@ -295,7 +320,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    color: #555;
+    color: #cdcdcd;
   }
   
   .footer-block p {
@@ -311,7 +336,7 @@
   }
   
   .footer-block ul li a {
-    color: #555;
+    color: #cdcdcd;
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
@@ -328,15 +353,16 @@
   /* Media queries */
   @media (max-width: 768px) {
     .home-header nav {
-      display: none; 
+      display: none;
     }
   
-    .home-header .container {
-      justify-content: space-between;
+    a.logo {
+      display: block;
+      margin: 0 auto;
     }
-
+  
     .phone-banner-image {
-        margin: 0 2rem;
+      margin: 0 2rem;
     }
   
     .main-banner .container {
@@ -344,6 +370,10 @@
       align-items: center;
       text-align: center;
       gap: 2rem;
+    }
+  
+    .banner-text {
+      margin-top: 20px;
     }
   
     .banner-text h2 {
@@ -414,6 +444,22 @@
       text-align: center;
     }
   
+    .footer-block p {
+      display: block;
+    }
+  
+    .footer-block i {
+      margin-right: 6px;
+    }
+  
+    .footer-block h5 {
+      margin-bottom: 5px;
+    }
+  
+    .footer-block ul li {
+      margin-bottom: 3px;
+    }
+  
     .footer-bottom .footer-container {
       flex-direction: column;
       gap: 2rem;
@@ -423,7 +469,9 @@
       text-align: center;
     }
   
-    h2, h3, h4 {
+    h2,
+    h3,
+    h4 {
       font-size: 1.5rem;
     }
   
