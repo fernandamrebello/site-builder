@@ -372,7 +372,7 @@
     color: #870d13;
   }
   
-  /* Media queries */
+  /* Media queries / Mobileview */
   @media (max-width: 768px) {
     .home-header nav {
       display: none;
@@ -440,6 +440,11 @@
       justify-content: center;
       margin-bottom: 1rem;
       gap: 1rem;
+    }
+
+    .phone-banner-left .phone-banner-icon p, 
+    .phone-banner-right .phone-banner-icon p {
+      text-align: center;
     }
   
     .phone-banner-image img {
